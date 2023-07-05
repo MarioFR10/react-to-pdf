@@ -1,4 +1,4 @@
-const { readFileSync } = require("fs");
+import { readFileSync } from "fs";
 
 type Props = {
   data: any;
@@ -6,7 +6,7 @@ type Props = {
 
 export function ButtonHelper({ data }: Props) {
   const message = "Hablar con un asesor";
-  const iconImg = "./src/imgs/chat.png";
+  const iconImg = "src/imgs/chat.png";
 
   return (
     <div className="button-container">

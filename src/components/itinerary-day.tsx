@@ -1,4 +1,4 @@
-const { readFileSync } = require("fs");
+import { readFileSync } from "fs";
 
 type Props = {
   data: any;
@@ -10,8 +10,8 @@ export function ItineraryDay({ data }: Props) {
   const activity2 = "Traslado al hotel en taxi, Uber, Lyft, transporte público";
   const activity3 = "Alojamiento en un hotel en Manhattan o en Brooklyn";
 
-  const dayImg = "./src/imgs/day-1.png";
-  const iconImg = "./src/imgs/arrival.png";
+  const dayImg = "src/imgs/day-1.png";
+  const iconImg = "src/imgs/arrival.png";
   const helper = "Llegada a New York";
 
   return (

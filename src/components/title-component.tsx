@@ -1,4 +1,4 @@
-const { readFileSync } = require("fs");
+import { readFileSync } from "fs";
 
 type Props = {
   data: any;
@@ -13,7 +13,7 @@ export function TitleComponent({ data }: Props) {
     <div className="title-container">
       <img
         src={`data:image/png;base64,${readFileSync(
-          "./src/imgs/title-background.png"
+          "src/imgs/title-background.png"
         ).toString("base64")}`}
         alt="title"
       />
