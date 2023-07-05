@@ -1,1 +1,1 @@
-# My first npm library
+# Render React to PDF library
